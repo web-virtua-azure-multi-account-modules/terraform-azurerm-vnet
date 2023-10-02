@@ -34,9 +34,9 @@ provider "azurerm" {
 
 ```hcl
 module "virtual_network_test" {
-  source = "./create-network"
+  source = "web-virtua-azure-multi-account-modules/vnet/azurerm"
 
-  name                = "web-virtua-azure-multi-account-modules/vnet/azurerm"
+  name                = "tf-test-vnet"
   resource_group_name = var.resource_group_name
   ip_adresses         = ["10.0.0.0/16"]
 
